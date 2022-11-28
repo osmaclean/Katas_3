@@ -140,7 +140,6 @@ console.log(divisibleList(arrGlobal1, 5))
 function trustMeOrNot(boolean, numero) {
       let arr = []
 
-
 }
 
 
