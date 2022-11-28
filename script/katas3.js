@@ -48,33 +48,46 @@ console.log(vowelsCounter(lista));
 // Terceira Tarefa - Retornar um novo array com esta frase fatiada em 3 em 3 caracteres posicionados ao longo do array.
 
 
+
+// function stringTripletGroup(divisao) {
+//       let devolucao = []
+//       for (let i = 0; i = divisao.length; i++) {
+//             let contagem = 0;
+//             switch (divisao[i]) {
+//                   case "Os ":
+//                   case "trê":
+//                   case "s m":
+//                   case "osq":
+//                   case "uet":
+//                   case "eir":
+//                   case "os ":
+//                         contagem++
+//                         break;
+//             }
+//             devolucao.push(contagem)
+//       }
+// return devolucao
+// }
+// console.log(stringTripletGroup(frase));
+
+
 let frase = ["Os três mosqueteiros"];
 
-function stringTripletGroup(divisao) {
-      let devolucao = []
-      for (let i = 0; i = divisao.length; i++) {
-            let contagem = 0;
-            switch (divisao[i]) {
-                  case "Os ":
-                  case "trê":
-                  case "s m":
-                  case "osq":
-                  case "uet":
-                  case "eir":
-                  case "os ":
-                        contagem++
-                        break;
+function stringTripletGroup(c) {
+      let stringVazia = ""
+      let contagem = []
+      for (let i = 0; i < c.length; i++) {
+            stringVazia += c[i]
+            if (stringVazia.length == 3) {
+                  contagem.push(c[i])
+            } else if (i == c.length - 1) {
+
             }
-            devolucao.push(contagem)
       }
-return devolucao
+      console.log(contagem)
+
 }
 console.log(stringTripletGroup(frase));
-
-
-
-
-
 
 
 
