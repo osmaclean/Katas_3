@@ -71,28 +71,31 @@ console.log(vowelsCounter(lista));
 // console.log(stringTripletGroup(frase));
 
 
-let frase = ["Os três mosqueteiros"];
+let frase = "Os três mosqueteiros";
+console.log(frase.substring(0, 3))
 
 function stringTripletGroup(c) {
       let stringVazia = ""
       let contagem = []
       for (let i = 0; i < c.length; i++) {
             stringVazia += c[i]
-            if (stringVazia.length == 3) {
+            if (stringVazia[i] == 3) {
                   contagem.push(c[i])
             } else if (i == c.length - 1) {
 
             }
+
       }
-      console.log(contagem)
+      return contagem
 
 }
 console.log(stringTripletGroup(frase));
 
-// Quarta Tarefa 
+// Quarta Tarefa - Retornar uma string com o tipo de pet que aparece mais vezes no array
 
 
 let arrGlobal = ["DoG", "cat", "cAT", "dOg", "cat", "Dog", "caT"]
+
 function dominantPet(animais) {
       let cachorro = 0
       let gato = 0
@@ -105,8 +108,7 @@ function dominantPet(animais) {
                   cachorro++
             }
 
-      }
-      if (gato > cachorro) {
+      } if (gato > cachorro) {
             return `CAT!`
       } else if (gato < cachorro) {
             return `DOG!`
@@ -117,12 +119,29 @@ function dominantPet(animais) {
 
 console.log(dominantPet(arrGlobal));
 
+// Quinta Tarefa - Retornar um novo array somente com os números divisíveis pelo parâmetro divisor.
+
+let arrGlobal1 = [14, 25, 32, 50, 35, 30];
+
+function divisibleList(lista, numero) {
+      let arr = []
+      for (let i = 0; i < lista.length; i++) {
+            if (lista[i] % numero == 0) {
+                  arr.push(lista[i])
+            }
+      }
+      return arr
+}
+
+console.log(divisibleList(arrGlobal1, 5))
+
+// Sexta Tarefa - Retornar um array com a quantidade de posições passadas por parâmetro e cada uma destas casas preenchido com o valor booleano escolhido pelo parâmetro.
+
+function trustMeOrNot(boolean, numero) {
+      let arr = []
 
 
-
-
-
-
+}
 
 
 
