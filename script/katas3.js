@@ -89,11 +89,33 @@ function stringTripletGroup(c) {
 }
 console.log(stringTripletGroup(frase));
 
+// Quarta Tarefa 
 
 
+let arrGlobal = ["DoG", "cat", "cAT", "dOg", "cat", "Dog", "caT"]
+function dominantPet(animais) {
+      let cachorro = 0
+      let gato = 0
 
+      for (let i = 0; i < animais.length; i++) {
+            let petz = animais[i].toLowerCase()
+            if (petz == "cat") {
+                  gato++
+            } else if (petz == "dog") {
+                  cachorro++
+            }
 
+      }
+      if (gato > cachorro) {
+            return `CAT!`
+      } else if (gato < cachorro) {
+            return `DOG!`
+      } else {
+            return `DRAW!`
+      }
+}
 
+console.log(dominantPet(arrGlobal));
 
 
 
