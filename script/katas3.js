@@ -171,11 +171,20 @@ function changeLampStatus(lista) {
 console.log(changeLampStatus([false, false, true, false, true, true, true]))
 
 
+// Oitava Tarefa - 
 
 
 
+function gradeAverage(lista) {
+      var arr = 0;
+      for (let i = 0; i < lista.length; i++){
+            var soma = (arr += lista[i]) / lista.length
+      }
+      // var soma =  arr / lista.length
+      return `A média das notas é: ` + soma.toFixed(2)
+}
 
-
+console.log(gradeAverage([6.0, 5.5, 6.7, 8.0, 10, 10, 7.1]))
 
 
 
