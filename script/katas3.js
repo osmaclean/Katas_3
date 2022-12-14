@@ -187,13 +187,17 @@ function gradeAverage(lista) {
 console.log(gradeAverage([6.0, 5.5, 6.7, 8.0, 10, 10, 7.1]))
 
 
+// Nona Tarefa - 
 
+function canvasDeliveriesPercentage(lista) {
+      var arr = 0;
+      for(let i = 0; i < lista.length; i++){
+            var porcentagem = (arr += lista[i]) - lista.length / 100
+      }
+      return `A porcentagem total de entregas atingida é: ` + porcentagem.toFixed(2) + ' %'
+}
 
-
-
-
-
-
+console.log(canvasDeliveriesPercentage([3.1, 9.5, 6, 8, 10, 10, 7.1, 8.5, 2.3, 6.7]));
 
 
 
