@@ -154,7 +154,7 @@ function trustMeOrNot(bool, numero) {
 
 console.log(trustMeOrNot(true, 8))
 
-// Sétima Tarefa - 
+// Sétima Tarefa - Deve retornar um novo array com os valores booleanos de cada posição invertido.
 
 function changeLampStatus(lista) {
       var arr = [];
@@ -171,7 +171,7 @@ function changeLampStatus(lista) {
 console.log(changeLampStatus([false, false, true, false, true, true, true]))
 
 
-// Oitava Tarefa - 
+// Oitava Tarefa - E deve retornar uma string dizendo qual a média destas notas. O valor da média deve se limitar a duas casas decimais.
 
 
 
@@ -187,7 +187,7 @@ function gradeAverage(lista) {
 console.log(gradeAverage([6.0, 5.5, 6.7, 8.0, 10, 10, 7.1]))
 
 
-// Nona Tarefa - 
+// Nona Tarefa - Deve retornar uma string dizendo qual a porcentagem sobre o total de entregas que o aluno atingiu.
 
 function canvasDeliveriesPercentage(lista) {
       var arr = 0;
@@ -200,7 +200,7 @@ function canvasDeliveriesPercentage(lista) {
 console.log(canvasDeliveriesPercentage([3.1, 9.5, 6, 8, 10, 10, 7.1, 8.5, 2.3, 6.7]));
 
 
-// Décima Tarefa 
+// Décima Tarefa - Exibir no console um novo array com a conversão das letras
 
 function shouldIGo(lista) {
       var arr = [];
@@ -220,6 +220,13 @@ console.log(shouldIGo(["R", "r", "G", "y", "G", "Y", "g"]))
 
 
 
+
+alert(`Page made by: Lucas Maclean.`);
+alert(`Página de aprendizado e execução de exercícios Katas 3`);
+alert(`Tudo dentro do "Console"`);
+
+console.log(`Page made by: Lucas Maclean.`);
+console.log(`Página de aprendizado e execução de exercícios Katas 3`);
 
 
 
