@@ -137,14 +137,24 @@ console.log(divisibleList(arrGlobal1, 5))
 
 // Sexta Tarefa - Retornar um array com a quantidade de posições passadas por parâmetro e cada uma destas casas preenchido com o valor booleano escolhido pelo parâmetro.
 
-function trustMeOrNot(boolean, numero) {
-      let arr = []
+
+function trustMeOrNot(bool, numero) {
+      var arr = [];
+      for (let i = 0; i < numero; i++) {
+            if (bool == true) {
+                  arr.push(bool)
+            }
+            else if (bool == false) {
+                  arr.push(bool)
+            }
+      }
+      return arr;
 
 }
 
+console.log(trustMeOrNot(true, 8))
 
-
-
+// Sétima Tarefa
 
 
 
