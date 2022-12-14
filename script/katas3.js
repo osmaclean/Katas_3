@@ -177,7 +177,7 @@ console.log(changeLampStatus([false, false, true, false, true, true, true]))
 
 function gradeAverage(lista) {
       var arr = 0;
-      for (let i = 0; i < lista.length; i++){
+      for (let i = 0; i < lista.length; i++) {
             var soma = (arr += lista[i]) / lista.length
       }
       // var soma =  arr / lista.length
@@ -191,7 +191,7 @@ console.log(gradeAverage([6.0, 5.5, 6.7, 8.0, 10, 10, 7.1]))
 
 function canvasDeliveriesPercentage(lista) {
       var arr = 0;
-      for(let i = 0; i < lista.length; i++){
+      for (let i = 0; i < lista.length; i++) {
             var porcentagem = (arr += lista[i]) - lista.length / 100
       }
       return `A porcentagem total de entregas atingida é: ` + porcentagem.toFixed(2) + ' %'
@@ -200,8 +200,22 @@ function canvasDeliveriesPercentage(lista) {
 console.log(canvasDeliveriesPercentage([3.1, 9.5, 6, 8, 10, 10, 7.1, 8.5, 2.3, 6.7]));
 
 
+// Décima Tarefa 
 
-
+function shouldIGo(lista) {
+      var arr = [];
+      for (let i = 0; i < lista.length; i++) {
+            if (lista[i] == "R" || lista[i] == "r") {
+                  arr.push("Stop!")
+            } else if (lista[i] == "G" || lista[i] == "g") {
+                  arr.push("Go!")
+            } else {
+                  arr.push("Attention!")
+            }
+      }
+      return arr;
+}
+console.log(shouldIGo(["R", "r", "G", "y", "G", "Y", "g"]))
 
 
 
