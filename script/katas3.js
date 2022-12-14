@@ -154,12 +154,21 @@ function trustMeOrNot(bool, numero) {
 
 console.log(trustMeOrNot(true, 8))
 
-// Sétima Tarefa
+// Sétima Tarefa - 
 
+function changeLampStatus(lista) {
+      var arr = [];
+      for (let i = 0; i < lista.length; i++) {
+            if (lista[i] == true) {
+                  arr.push(false);
+            } else if (lista[i] == false) {
+                  arr.push(true);
+            }
+      }
+      return arr;
+}
 
-
-
-
+console.log(changeLampStatus([false, false, true, false, true, true, true]))
 
 
 
